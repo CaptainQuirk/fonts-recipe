@@ -6,7 +6,7 @@ if [ ! -d ~/.fonts ]; then
     mkdir ~/.fonts
 fi
 
-if [ ! -f "$FONT_FILE" ]; then
+if ! fc-list | grep "SauceCodePro Nerd Font Mono:style=Medium,Regular" > /dev/null 2>&1; then
     wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/SourceCodePro/Medium/complete/Sauce%20Code%20Pro%20Medium%20Nerd%20Font%20Complete%20Mono.ttf -P ~/.fonts
     fc-cache -fv
 fi

@@ -1,7 +1,9 @@
 #!/bin/bash
 
+# TODO Remove this var
 FONT_FILE="$HOME/.fonts/Sauce\ Code\ Pro\ Medium\ Nerd\ Font\ Complete\ Mono.ttf"
 
+# TODO move this thing to the font fonction
 if [ ! -d ~/.fonts ]; then
     mkdir ~/.fonts
 fi

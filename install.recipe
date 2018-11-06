@@ -1,0 +1,12 @@
+directory "Creating a base directory"; do
+    path "$HOME/.fonts"
+done
+
+download "Getting remote font file"; do
+    url "https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/SourceCodePro/Medium/complete/Sauce%20Code%20Pro%20Medium%20Nerd%20Font%20Complete%20Mono.ttf"
+    dir "$HOME/.fonts"
+done
+
+code "Refresh font cache"; do
+    code "fc-cache fv"
+done
